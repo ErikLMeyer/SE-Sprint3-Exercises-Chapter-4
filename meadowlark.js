@@ -7,7 +7,6 @@
 
 // Tradition, but not required, to include imports at top. -EM
 const fortune = require('./lib/fortune');
-const links = require('./lib/links');
 const express = require('express');
 const expressHandelbars = require('express-handlebars');
 const app = express();
@@ -28,10 +27,7 @@ app.get('/about', (req, res) => {
 })
 
 // Secret handle renders random page -EM
-app.get('/secret', (req, res) => {
-    var page = {links: links.getLink()}
-    res.render(page);
-})
+app.get('/secret', (req, res) => res.render('secret'));
 
 // Custom 404 page
 app.use((req, res) => {
