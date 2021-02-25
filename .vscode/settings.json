@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/aa7d8611-b41d-4547-90b5-0685138baec0/resourceGroups/Sprint3-em-rg/providers/Microsoft.Web/sites/Sprint3-Chapter4",
+    "appService.deploySubpath": "."
+}
