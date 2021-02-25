@@ -29,7 +29,8 @@ app.get('/about', (req, res) => {
 
 // Secret handle renders random page -EM
 app.get('/secret', (req, res) => {
-    res.render({links: links.getLink()});
+    var page = {links: links.getLink()}
+    res.render(page);
 })
 
 // Custom 404 page
