@@ -26,7 +26,7 @@ app.get('/about', (req, res) => {
     res.render('about', {fortune: fortune.getFortune()});
 })
 
-// Secret handle renders random page -EM
+// Secret page. Doesn't work the way I want. -EM
 app.get('/secret', (req, res) => res.render('secret'));
 
 // Custom 404 page
